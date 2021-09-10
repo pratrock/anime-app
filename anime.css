@@ -1,0 +1,32 @@
+.container-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+}
+
+.container-row > *{
+    flex-basis: 20rem;
+    flex-shrink: 0;
+}
+
+.container-row .card{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-row .card> .card-content {
+    flex-grow: 1;
+}
+
+.container-row .card > .card-image{
+    flex-basis: 25rem;
+    flex-shrink: 0;
+    overflow-y:hidden;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
